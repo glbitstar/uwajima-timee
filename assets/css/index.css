@@ -1,0 +1,462 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Noto Sans JP;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+p {
+  padding: 5px;
+}
+
+/* Top Banner */
+.top-banner {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/top.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.top-banner img {
+  width: 100vw;
+  height: auto;
+}
+
+/* Title and Description */
+.top-title {
+  position: absolute;
+  top: 44px;
+  left: 42px;
+}
+
+.top-description {
+  position: absolute;
+  bottom: 172px;
+  right: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.description-box {
+  background-color: #EAF4FC;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+/* Button Styling */
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #fbff00 0%, #e84b03 100%);
+  box-shadow: 6px 6px 10px 0px #00000040;
+  border: 3px solid #fff;
+  color: #fff;
+  border-radius: 50px;
+}
+
+/* Top Button */
+.top-button {
+  visibility: hidden;
+  position: absolute;
+  right: 45px;
+  bottom: 26px;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 48px;
+}
+
+.timee-text {
+  gap: 20vw;
+}
+.top-res-btn {
+  display: flex;
+  background-color: #EAF4FC;
+  width: 100vw;
+}
+.qa {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.flow {
+  padding: 2vw 8vw; 
+    gap: 2vw;
+}
+.flow_img {
+width: 30%;
+}
+.bottom_col {
+  background-color: #EAF4FC;
+}
+
+@media (min-width: 425px) {
+  .description-btn-sp {
+    display: none;
+    visibility: visible;
+  }
+}
+@media (max-width: 425px) {
+  .description-btn-sp {
+    display: block;
+    width: 90vw;
+    height: 19vw;
+    display: flex;
+  }
+  .description-btn {
+    display: none;
+    visibility: visible;
+  }
+  .flow_img {
+    width: 40%;
+  }
+}
+@media (min-width: 700px) {
+  .top-res-btn {
+    display: none;
+  }
+
+  .top-button {
+    visibility: visible;
+  }
+  
+}
+
+
+@media (max-width: 375px) {
+  .text-38 {
+      font-size: 14px;
+  }
+  .text-50 {
+    font-size: 21px;
+}
+.bg-00BE1D4D {
+  font-size: 24px;
+}
+}
+
+/* Title Sections */
+.title-1,
+.title-2 {
+  width: 100vw;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-shadow: 4px 4px 4px 0px #00000040;
+}
+
+.title-1 {
+  background: linear-gradient(180deg, #b9e8fb 0%, #007bff 100%);
+}
+
+.title-2 {
+  background: linear-gradient(180deg, #15a815 0%, #002e00 100%);
+}
+
+.diagonal {
+  max-width: 80px;
+  width: 13vw;
+  border-width: 1px;
+  border: 1px solid #000000;
+}
+
+/* Subtitle Sections */
+.subtitle-1 {
+  width: 90vw;
+  max-width: 1200px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #eaf4fc;
+}
+
+.subtitle-2 {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  color: #fff;
+}
+
+/* Table Styling */
+table {
+  box-shadow: 12px 12px 8px 0px #00000040;
+  border: 2px solid #555555;
+  border-radius: 20px;
+  border-spacing: 0;
+  overflow: hidden;
+}
+
+td {
+  font-size: 30px;
+  padding: 37px;
+  border: 1px solid #555555;
+}
+
+/* User Testimonial Section */
+.user-testimonial {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  gap: 45px;
+  padding-top: 60px;
+}
+
+.user-inquiry {
+  align-items: center;
+}
+
+.use-case {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 63px;
+}
+.address {
+  max-width: 1000px;
+}
+@media (max-width: 768px) {
+  .top-banner {
+    background-image: url("../img/top_sp.png");
+    height: 100vw;
+  }
+}
+@media (min-width: 1100px) {
+  .use-case {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+/* Responsive Design */
+@media (max-width: 1100px) {
+  .top-title {
+    top: 40px;
+    left: 25px;
+  }
+  .top-description {
+    bottom: 150px;
+    right: 45px;
+  }
+
+  .top-button {
+    right: 40px;
+    bottom: 20px;
+    gap: 36px;
+  }
+
+  .address {
+    width: 800px;
+  }
+ 
+  .title-1,
+  .title-2 {
+    height: 130px;
+  }
+
+  .subtitle-1 {
+    height: 65px;
+  }
+
+  .subtitle-2 {
+    font-size: 28px;
+  }
+
+  table {
+    width: 90vw;
+  }
+
+  td {
+    font-size: 26px;
+    padding: 30px;
+  }
+
+  .user-testimonial {
+    flex-direction: column-reverse;
+    gap: 48px;
+    padding-top: 50px;
+  }
+
+  .user-testimonial div {
+    align-items: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .top-title {
+    top: 30px;
+    left: 15px;
+  }
+
+  .address {
+    width: 600px;
+  }
+  .top-description {
+    bottom: 120px;
+    right: 30px;
+  }
+
+  .top-button {
+    right: 25px;
+    bottom: 15px;
+    gap: 24px;
+  }
+
+  .title-1,
+  .title-2 {
+    height: 120px;
+  }
+
+  .subtitle-1 {
+    height: 60px;
+  }
+
+  .subtitle-2 {
+    font-size: 24px;
+  }
+
+  table {
+    width: 90vw;
+  }
+
+  td {
+    font-size: 24px;
+    padding: 25px;
+  }
+
+  .user-testimonial {
+    gap: 24px;
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .user-inquiry {
+    align-items: center;
+    flex-direction: column;
+  }
+  .bottom-res-btn {
+    display: none;
+  }
+  .address {
+    width: 70vw;
+  }
+
+  .top-title {
+    top: 20px;
+    left: 10px;
+  }
+
+  .top-description {
+    bottom: 26px;
+    right: 30px;
+  }
+
+  .top-button {
+    right: 30px;
+    bottom: 20px;
+    gap: 24px;
+  }
+
+  .title-1,
+  .title-2 {
+    height: 120px;
+  }
+
+  .subtitle-1 {
+    height: 60px;
+  }
+
+  .subtitle-2 {
+    font-size: 24px;
+  }
+
+  table {
+    width: 90vw;
+  }
+
+  td {
+    font-size: 24px;
+    padding: 25px;
+  }
+
+  .user-testimonial {
+    gap: 16px;
+    padding-top: 35px;
+  }
+}
+
+@media (max-width: 500px) {
+  .top-title {
+    top: 10px;
+    left: 5px;
+  }
+
+  .top-description {
+    bottom: 20px;
+    right: 15px;
+  }
+
+  .top-button {
+    right: 15px;
+    bottom: 15px;
+    gap: 12px;
+  }
+
+  .title-1,
+  .title-2 {
+    height: 100px;
+  }
+
+  .subtitle-1 {
+    height: 50px;
+  }
+
+  .subtitle-2 {
+    font-size: 20px;
+  }
+
+  table {
+    width: 95vw;
+  }
+
+  td {
+    font-size: 20px;
+    padding: 18px;
+  }
+
+  .user-testimonial {
+    gap: 12px;
+    padding-top: 30px;
+  }
+}
