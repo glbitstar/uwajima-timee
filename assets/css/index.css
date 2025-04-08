@@ -21,6 +21,11 @@ p {
   padding: 5px;
 }
 
+.button p {
+  line-height: 125%;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 /* Top Banner */
 .top-banner {
   width: 100vw;
@@ -34,6 +39,10 @@ p {
 .top-banner img {
   width: 100vw;
   height: auto;
+}
+
+.p-4vw {
+  padding: 4vw 0;
 }
 
 /* Title and Description */
@@ -53,11 +62,17 @@ p {
   align-items: flex-end;
 }
 
+
 .description-box {
   background-color: #EAF4FC;
   width: 100vw;
   display: flex;
   justify-content: center;
+}
+
+.description-text {
+  color: #333333;
+  line-height: 125%;
 }
 
 /* Button Styling */
@@ -90,11 +105,13 @@ p {
 .timee-text {
   gap: 20vw;
 }
+
 .top-res-btn {
   display: flex;
   background-color: #EAF4FC;
   width: 100vw;
 }
+
 .qa {
   width: 100vw;
   display: flex;
@@ -102,14 +119,165 @@ p {
 }
 
 .flow {
-  padding: 2vw 8vw; 
-    gap: 2vw;
+  padding: 2vw 8vw;
+  gap: 2vw;
 }
+
 .flow_img {
-width: 30%;
+  width: 30%;
 }
+
 .bottom_col {
   background-color: #EAF4FC;
+}
+
+.example_container {
+  display: flex;
+  flex-direction: row;
+  gap: 4vw;
+}
+
+.example-job {
+  height: 2.9vw;
+  max-height: 40px;
+}
+
+.example-job p {
+  color: #333333;
+  line-height: 125%;
+  padding: 0;
+  padding-bottom: 0.2vw;
+  padding-left: 10px;
+  font-size: 2.2vw;
+}
+
+.example {
+  max-width: 600px;
+  width: 43vw;
+}
+
+.example_text_right {
+  font-size: 1.3vw;
+  color: #333333;
+  line-height: 125%;
+  padding-left: 10px;
+}
+
+.example_title {
+  max-width: 600px;
+  width: 43vw;
+  height: 5vw;
+  max-height: 65px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+}
+
+.example_main {
+  max-width: 600px;
+  width: 43vw;
+  padding: 1.8vw 0.7vw;
+}
+
+.example_text {
+  color: #333333;
+  padding: 0;
+  margin: 1.5vw -0.4vw 0;
+  font-size: 1.6vw;
+  line-height: 2.2vw;
+}
+
+.story {
+  max-height: 460px;
+  max-width: 500px;
+  height: 33vw;
+  width: 36vw;
+}
+
+.story_text1 {
+  font-size: 2.5vw;
+  line-height: 125%;
+}
+
+.example_border1 {
+  border: 2px solid #FDEDF9;
+}
+
+.example_border2 {
+  border: 2px solid #EBF4F4;
+}
+
+.example_main_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example_text_box {
+  width: 52%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 1400px) {
+
+  .p-4vw {
+    padding: 60px 0;
+  }
+
+  td {
+    font-size: 30px !important;
+    padding: 37px !important;
+  }
+
+  .story_text1 {
+    font-size: 35px;
+  }
+
+  .user_story {
+    gap: 42px;
+    padding-top: 60px;
+  }
+
+  .example_text_right {
+    font-size: 19px;
+  }
+
+  .example_main {
+    padding: 25px 10px;
+  }
+
+  .example_container {
+    gap: 63px;
+  }
+
+  .example_text {
+    line-height: 31px;
+    font-size: 22px;
+    margin: 20px 0 0;
+  }
+
+  .example_title {
+    font-size: 32px;
+  }
+
+  .example-job p {
+    font-size: 30px;
+  }
+
+  .text-19 {
+    font-size: 19px;
+  }
+
+  .text-22 {
+    font-size: 22px;
+  }
+
+  .text-36 {
+    font-size: 36px;
+  }
 }
 
 @media (min-width: 425px) {
@@ -118,6 +286,7 @@ width: 30%;
     visibility: visible;
   }
 }
+
 @media (max-width: 425px) {
   .description-btn-sp {
     display: block;
@@ -125,14 +294,17 @@ width: 30%;
     height: 19vw;
     display: flex;
   }
+
   .description-btn {
     display: none;
     visibility: visible;
   }
+
   .flow_img {
     width: 40%;
   }
 }
+
 @media (min-width: 700px) {
   .top-res-btn {
     display: none;
@@ -141,20 +313,22 @@ width: 30%;
   .top-button {
     visibility: visible;
   }
-  
+
 }
 
 
 @media (max-width: 375px) {
   .text-38 {
-      font-size: 14px;
+    font-size: 14px;
   }
+
   .text-50 {
     font-size: 21px;
-}
-.bg-00BE1D4D {
-  font-size: 24px;
-}
+  }
+
+  .bg-00BE1D4D {
+    font-size: 24px;
+  }
 }
 
 /* Title Sections */
@@ -218,19 +392,19 @@ table {
 }
 
 td {
-  font-size: 30px;
-  padding: 37px;
+  font-size: 2.1vw;
+  padding: 2.6vw;
   border: 1px solid #555555;
 }
 
 /* User Testimonial Section */
-.user-testimonial {
+.user_story {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  gap: 45px;
-  padding-top: 60px;
+  gap: 4vw;
+  padding-top: 4vw;
 }
 
 .user-inquiry {
@@ -242,20 +416,23 @@ td {
   grid-template-columns: repeat(1, 1fr);
   gap: 63px;
 }
+
 .address {
   max-width: 1000px;
 }
+
 @media (max-width: 768px) {
   .top-banner {
     background-image: url("../img/top_sp.png");
     height: 100vw;
   }
 }
+
 @media (min-width: 1100px) {
   .use-case {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
 }
 
 /* Responsive Design */
@@ -264,6 +441,7 @@ td {
     top: 40px;
     left: 25px;
   }
+
   .top-description {
     bottom: 150px;
     right: 45px;
@@ -278,7 +456,7 @@ td {
   .address {
     width: 800px;
   }
- 
+
   .title-1,
   .title-2 {
     height: 130px;
@@ -301,14 +479,17 @@ td {
     padding: 30px;
   }
 
-  .user-testimonial {
+  .user_story {
     flex-direction: column-reverse;
-    gap: 48px;
-    padding-top: 50px;
   }
 
-  .user-testimonial div {
+  .user_story div {
     align-items: center;
+  }
+
+  .story {
+    width: 72vw;
+    height: 66vw;
   }
 }
 
@@ -321,6 +502,7 @@ td {
   .address {
     width: 600px;
   }
+
   .top-description {
     bottom: 120px;
     right: 30px;
@@ -361,13 +543,66 @@ td {
 }
 
 @media (max-width: 700px) {
+
+  .timee_title2 {
+    font-size: 3vw !important;
+  }
+
+  .timee-text {
+    gap: 10vw;
+  }
+
+  .story_text1 {
+    font-size: 3.5vw;
+  }
+
+  .example_text {
+    margin: 3vw -0.8vw 0;
+    font-size: 3.2vw;
+    line-height: 4.4vw;
+  }
+
+  .example_text_right {
+    font-size: 2.6vw;
+  }
+
+  .example_container {
+    flex-direction: column;
+  }
+
+  .example,
+  .example_title,
+  .example_main {
+    width: 86vw;
+  }
+
+  .example_title {
+    height: 10vw;
+    font-size: 4vw;
+  }
+
+  .example_main {
+    padding: 3.6vw 1.4vw;
+  }
+
+  .example-job {
+    height: 5.8vw;
+  }
+
+  .example-job p {
+    padding-bottom: 0.4vw;
+    font-size: 4.4vw;
+  }
+
   .user-inquiry {
     align-items: center;
     flex-direction: column;
   }
+
   .bottom-res-btn {
     display: none;
   }
+
   .address {
     width: 70vw;
   }
@@ -406,8 +641,8 @@ td {
   }
 
   td {
-    font-size: 24px;
-    padding: 25px;
+    font-size: 3.1vw;
+    padding: 3.6vw;
   }
 
   .user-testimonial {
@@ -435,11 +670,11 @@ td {
 
   .title-1,
   .title-2 {
-    height: 100px;
+    height: 18vw;
   }
 
   .subtitle-1 {
-    height: 50px;
+    height: 9vw;
   }
 
   .subtitle-2 {
@@ -451,8 +686,8 @@ td {
   }
 
   td {
-    font-size: 20px;
-    padding: 18px;
+    font-size: 3.1vw;
+    padding: 3.6vw;
   }
 
   .user-testimonial {
