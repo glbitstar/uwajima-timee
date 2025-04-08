@@ -24,6 +24,16 @@ p {
 .button p {
   line-height: 125%;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button a {
+  line-height: 125%;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px;
 }
 
 /* Top Banner */
@@ -86,6 +96,7 @@ p {
   border: 3px solid #fff;
   color: #fff;
   border-radius: 50px;
+  text-decoration: none;
 }
 
 /* Top Button */
@@ -543,6 +554,11 @@ td {
 }
 
 @media (max-width: 700px) {
+
+  .description-pt {
+    padding-top: 0 !important;
+    margin-top: -3vw;
+  }
 
   .timee_title2 {
     font-size: 3vw !important;
